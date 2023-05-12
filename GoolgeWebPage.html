@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background-position: center;
+        background-size: cover;
+        background-image: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+      }
+
+      .head {
+        margin: 1rem 0 0 90%;
+      }
+
+      #head-content:hover {
+        text-decoration: underline;
+      }
+
+      #head-content {
+        padding: 2px;
+        color: white;
+        text-decoration: none;
+      }
+
+      .body {
+        width: 500px;
+        margin: 12% auto;
+        font-size: xx-large;
+      }
+
+      h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      .search-bar {
+        position: relative;
+        text-align: center;
+      }
+
+      #text {
+        border-radius: 20px;
+        width: 405px;
+        height: 30px;
+        padding-left: 2rem;
+      }
+      #mic {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: medium;
+        top: 18px;
+        right: 40px;
+      }
+
+      #mic:hover {
+        cursor: pointer;
+      }
+
+      #search {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: medium;
+        top: 18px;
+        left: 40px;
+      }
+
+      #search:hover {
+        cursor: pointer;
+      }
+
+      #shortcut {
+        margin: 1rem auto;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 25px;
+      }
+
+      #plus {
+        margin: 0.5rem 0 0.5rem 0;
+      }
+
+      #add-text {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #add-text:hover {
+        text-decoration: underline;
+      }
+
+      #pen {
+        position: absolute;
+        color: white;
+        right: 50px;
+        bottom: 50px;
+        /* margin: 15em 0 0 93em; */
+      }
+
+      #pen:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="head">
+      <a href="https://www.google.com" id="head-content">google</a>
+      <a href="https://www.instagram.com" id="head-content">instagram</a>
+      <i class="fa-sharp fa-solid fa-bars" id="head-content"></i>
+    </div>
+
+    <div class="body">
+      <h1>Google</h1>
+
+      <div class="search-bar">
+        <input type="text" id="text" placeholder="Search bar " />
+        <i class="fa-solid fa-microphone" id="mic"></i>
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+      </div>
+      
+      <div id="shortcut">
+        <i class="fa-solid fa-plus" id="plus"></i>
+      </div>
+      <h4 id="add-text">Add shortcut</h4>
+    </div>
+    <i class="fa-solid fa-pen" id="pen"></i>
+  </body>
+</html>
